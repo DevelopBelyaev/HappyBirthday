@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.oleg.happybirthday.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <!--
+         ImageView t must be at the very bottom of the hierarchy and all the TextView will be displayed on top of the ImageView.
+         this is mot bug. this a feature
+    -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/android_party" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_light"
+        android:text="@string/happy_text"
+        android:textSize="@dimen/default_text_size"
+        android:layout_marginLeft="@dimen/default_left_margin"
+        android:layout_marginBottom="@dimen/default_margin_bottom"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl2_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/default_text_size"
+        android:layout_marginRight="@dimen/default_left_margin"
+        android:fontFamily="@string/font_family"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
